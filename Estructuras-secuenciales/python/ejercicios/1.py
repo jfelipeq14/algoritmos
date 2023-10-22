@@ -1,2 +1,2 @@
-# 1.Elabore un algoritmo que muestre “Hola Mundo”.
+# 1.Elabore un algoritmo que muestre (imprima) “Hola Mundo”.
 print(f"Hola mundo")

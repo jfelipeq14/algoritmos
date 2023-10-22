@@ -1,15 +1,16 @@
 (() => {
-    // let variable en tipo y valor
-    let numero = 10;
-    numero = "20"
 
-    // const es variable en valor el tipo siempre es el mismo de la inicializacion
-    const numero2 = "32 player";
-    console.log(numero2);
-    console.log(parseInt(numero2));
+    let nombreDeVariable; //declaracion de variable
+    let nombreDeVariable2 = 1; //Inicializacion de variable
 
-    const numero3 = 0;
-    console.log(numero3);
+    // let se utiliza para declarar variables que pueden ser reasignadas a un nuevo valor. Por ejemplo:
+    let x = 1;
+    x = 2; // se puede reasignar
+
+    // const se utiliza para declarar variables que no pueden ser reasignadas a un nuevo valor. Por ejemplo:
+    const y = 1;
+    y = 2; // esto dará un error
+
 
     // cadena de texto
     let nombreDePersona = "Juan Felipe";
@@ -20,8 +21,8 @@
     console.log(edadDePersona);
 
     // booleano
-    let estadoDePersona = false;
-    console.log(estadoDePersona);
+    let autenticado = false;
+    console.log(autenticado);
 
     // arreglo
     const edadPersonas = [22, 19, 18, 22, 20];

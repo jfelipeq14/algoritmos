@@ -1,4 +1,4 @@
-// 3.Elabore un algoritmo que muestre 7 veces “hola Mundo” con las 7 variables.
+// 3. Elabore un algoritmo que muestre 7 veces “hola Mundo” con las 7 variables.
 let saludo1Algoritmo3 = "Hola mundo";
 console.log(saludo1Algoritmo3);
 

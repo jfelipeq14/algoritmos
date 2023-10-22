@@ -1,8 +1,7 @@
-// Suponga que un individuo desea invertir su capital en un banco y desea saber cuánto dinero ganara después de un mes si el banco paga a razón de 2% mensual.
+// Suponga que un individuo desea invertir su capital (entrada) en un banco y desea saber cuánto dinero ganara (salida) después de un mes si el banco paga a razón de 2% mensual.
 
-let capital = parseInt(prompt("Ingrese el capital a invertir"))
-let interes = 0.02 // 2%
-let ganancia = capital * interes // 2% de 100
-let total = capital + ganancia
+const capital = parseInt(prompt("Ingrese el capital a invertir"));
+const ganancia = capital * 0.02; // 2% mensual
+const total = capital + ganancia;
 
-alert(`El capital inicial es de ${capital} y la ganancia es de ${ganancia} para un total de ${total}`)
+console.log(`El capital inicial es: ${capital} y la ganancia es de ${ganancia} para un total de ${total}`);
