@@ -1,6 +1,6 @@
 // Suponga que un individuo desea invertir su capital (entrada) en un banco y desea saber cuánto dinero ganara (salida) después de un mes si el banco paga a razón de 2% mensual.
 
-const capital = parseInt(prompt("Ingrese el capital a invertir"));
+const capital = parseFloat(prompt("Ingrese el capital a invertir"));
 const ganancia = capital * 0.02; // 2% mensual
 const total = capital + ganancia;
 

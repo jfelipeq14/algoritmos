@@ -1,6 +1,6 @@
 // 10.Elabore un algoritmo que el usuario ingrese 15 edades y 15 nombres.
-let nombre1 = prompt("Ingrese su nombre 1");
-let edad1 = parseInt(prompt("Ingrese su edad 1"));
+let nombre1 = prompt("Ingrese su nombre 1"); //leer datos
+let edad1 = parseInt(prompt("Ingrese su edad 1")); //convertir a numero
 
 let nombre2 = prompt("Ingrese su nombre 2");
 let edad2 = prompt("Ingrese su edad 2");
