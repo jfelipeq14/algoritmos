@@ -1,5 +1,4 @@
 Nivel 1
-
 Determinar si un número es divisible por otro número.
 Determinar si una fecha es válida.
 
