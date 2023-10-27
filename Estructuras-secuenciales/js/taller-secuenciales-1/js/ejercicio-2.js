@@ -14,4 +14,4 @@ e10 = parseInt(prompt("Ingrese la edad 10: "));
 let suma = e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + e10;
 let promedio = suma / 10; //4.8 or NaN
 
-console.log(`El promedio de las 10 edades es: ${promedio}`);
+alert(`El promedio de las 10 edades es: ${promedio}`);

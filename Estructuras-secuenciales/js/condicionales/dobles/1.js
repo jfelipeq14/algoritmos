@@ -1,0 +1,1 @@
+// Pedir al usuario un día de la semana. Si el día es lunes o martes, imprimir "Es día laborable". Si el día es miércoles, jueves, viernes o sábado, imprimir "Es día entre semana". Si el día es domingo, imprimir "Es fin de semana".

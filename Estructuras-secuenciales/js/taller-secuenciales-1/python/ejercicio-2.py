@@ -12,6 +12,6 @@ e9 = int(input("Ingrese el valor de e9: "))
 e10 = int(input("Ingrese el valor de e10: "))
 
 suma = e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + e10
-promedio = suma / 10 #4.8
+promedio = suma / 10 # 4.8
 
 print(f'El promedio de las edades es: {promedio}')
