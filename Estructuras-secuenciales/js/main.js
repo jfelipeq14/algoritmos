@@ -50,4 +50,14 @@
         estadoSalud: true,
     }]
     console.log(informacionDePersonas);
+
+    // operadores:
+    // variable < 1 (menor a 1)
+    // variable > 0 (mayor a 0)
+    // varaible <= 1 (menor o igual a 1)
+    // variable >= 0 (mayor o igual a 0)
+    // variable == 0 (es igual en valor a 0)
+    // variable === 0 (es igual en valor y tipo a 0)
+    // variable != 0 (es diferente en valor a 0)
+    // variable !== 0 (es diferente en valor y tipo a 0)
 })()
