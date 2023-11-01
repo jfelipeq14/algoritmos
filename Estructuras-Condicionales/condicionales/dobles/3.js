@@ -9,10 +9,8 @@
 
 const notaUsuario = parseInt(prompt("Favor, Digitar nota"))
 
-if (notaUsuario === 7) {
+if (notaUsuario >= 7) {
     alert(`Goleador a medias. pero goleador ${notaUsuario}`)
-} else if (notaUsuario > 7) {
-    alert(`Goleador, Goleador, Usuario Goleador ${notaUsuario}`)
 } else {
     alert(`Comite o a mamar ${notaUsuario}`)
 }
