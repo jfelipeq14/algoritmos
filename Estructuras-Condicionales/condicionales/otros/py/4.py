@@ -6,16 +6,16 @@
 # P: si (hT <= 40) => sS=hT*25
 #     sino
 #      si (hT > 40) => sS = (hT-40)*30 + 40*25
-# DS: sM
+# DS: sS
 
-# Entraa
+# Entrada
 hT = int(input("Digite la cantidad de horas trabajadas: "))
 
 # Proceso
 if hT <= 40:
-    sS = 40 * 25
+    sS=hT*25
 elif hT > 40:
-    sS = ((hT-40)*30) + (40*25)
+    sS = (hT-40)*30 + 40*25
 
 # Salida
 print(sS)
