@@ -1,6 +1,7 @@
 // Cuantos empleados son solteros, casados, separados, unión libre, divorciados y viudos tiene una empresa y sabemos que el numero total de empleados es 10. 
 
 let solteros = 0
+let acumSolteros = ""
 let casados = 0
 let separados = 0
 let unionLibre = 0
@@ -9,7 +10,8 @@ let viudos = 0
 
 let empleado1 = prompt("Digite el estado civil del empleado 1")
 if (empleado1 === "soltero") {
-    solteros = solteros + 1
+    solteros = solteros + 1 //suma en x cantidad
+    acumSolteros = acumSolteros + empleado1 //acumula las variables
 } else if (empleado1 === "casado") {
     casados = casados + 1
 } else if (empleado1 === "separado") {
@@ -23,7 +25,8 @@ if (empleado1 === "soltero") {
 }
 let empleado2 = prompt("Digite el estado civil del empleado 2")
 if (empleado2 === "soltero") {
-    solteros = solteros + 1
+    solteros = solteros + 1 //contador
+    acumSolteros = acumSolteros + empleado2 //acumulador
 } else if (empleado2 === "casado") {
     casados = casados + 1
 } else if (empleado2 === "separado") {
@@ -37,7 +40,8 @@ if (empleado2 === "soltero") {
 }
 let empleado3 = prompt("Digite el estado civil del empleado 3")
 if (empleado3 === "soltero") {
-    solteros = solteros + 1
+    solteros = solteros + 1 //contador
+    acumSolteros = acumSolteros + empleado3 //acumulador
 } else if (empleado3 === "casado") {
     casados = casados + 1
 } else if (empleado3 === "separado") {

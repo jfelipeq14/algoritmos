@@ -3,9 +3,9 @@
 # DE: cantidadPiezas, valorPiezas
 
 # P: totalCompra = cantidadPiezas * valorPiezas
-# si (totalCompra > 500000) => propio=0.55, banco = totalCompra * 0.30, fabricante=0.15
+# si (totalCompra > 500000) => porcentajePropio=0.55, banco = totalCompra * 0.30, porcentajeFabricante=0.15
 #   sino
-#    si (totalCompra <= 500000) => propio=0.70, fabricante=0.30
+#    si (totalCompra <= 500000) => porcentajePropio=0.70, porcentajeFabricante=0.30
 # Fin si
 
 # propio = totalCompra * propio
@@ -28,17 +28,17 @@ totalCompra = cantidadPiezas * valorPiezas
 # validar el valor de la compra
 if totalCompra > 500000:
     # asignar porcentajes
-    propio=0.55
+    porcentajePropio=0.55
     banco = totalCompra * 0.30
-    fabricante=0.15
+    porcentajeFabricante=0.15
 elif totalCompra <= 500000:
     # asignar porcentajes
-    propio=0.70
-    fabricante=0.30
+    porcentajePropio=0.70
+    porcentajeFabricante=0.30
 
 # valores de pago
-propio = totalCompra * propio
-fabricante = totalCompra * fabricante
+propio = totalCompra * porcentajePropio
+fabricante = totalCompra * porcentajeFabricante
 
 # credito del fabricante
 totalCredito = fabricante + (fabricante * 0.20)
