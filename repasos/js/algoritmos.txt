@@ -1,0 +1,7 @@
+Elabore un algoritmos que dependiendo del codigo promocional realice el descuento a una factura.
+Los codigos promocionales son:
+2023 y tiene un descuento del 23%,
+2021 y tiene un descuento del 21%,
+2022 y tiene un descuento del 22%,
+1950 y tiene un descuento del 50%
+Debe tener en cuenta que la factura se hace para un solo producto y la cantidad minima del producto son 2 si se quiere aplicar el descuento.
