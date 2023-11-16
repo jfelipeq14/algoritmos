@@ -1,6 +1,6 @@
 # elabore un algoritmo que lea el sexo de 10 empleados y muestre cuantos son hombres y cuantos son mujeres.
-hombres=0
-mujeres=0
+hombres = 0
+mujeres = 0
 
 for i in range(10):
     sexo = input(f"Digite el sexo de la persona {i+1}: ")
