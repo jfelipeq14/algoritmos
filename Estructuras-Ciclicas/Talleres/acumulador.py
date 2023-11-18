@@ -1,4 +1,3 @@
-
-nombre = input("Digite el nombre")
+edad = int(input("Digite la edad"))
 acumulador = ""
-acumulador = acumulador + nombre
+acumulador = acumulador + edad
