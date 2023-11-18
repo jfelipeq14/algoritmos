@@ -16,7 +16,7 @@ for i in range(3):
         productos = 3
 
     for i in range(productos):
-        print(f"producto {i+1} de la factura {factura}")
+        print(f"Producto {i+1} de la factura {factura}")
         nombre = input(f"Digite el nombre del producto {i+1}: ")
         cantidad = int(input(f"Digite la cantidad de {nombre}: "))
         precio = int(input(f"Digite el precio de {nombre}: "))
@@ -30,20 +30,20 @@ for i in range(3):
         elif factura == 3:
             valorFactura3 += totalProducto
 
-valorDelDia = valorFactura1 + valorFactura2 + valorFactura3
+subtotal = valorFactura1 + valorFactura2 + valorFactura3
 
-if valorDelDia < 2000000:
-    descuento = valorDelDia * 0.10
-elif valorDelDia >= 2000000 and valorDelDia <= 5000000:
-    descuento = valorDelDia * 0.12
-elif valorDelDia > 5000000:
-    descuento = valorDelDia * 0.15
+if subtotal < 2000000:
+    descuento = subtotal * 0.10
+elif subtotal >= 2000000 and subtotal <= 5000000:
+    descuento = subtotal * 0.12
+else:
+    descuento = subtotal * 0.15
 
-neto = valorDelDia - descuento
+neto = subtotal - descuento
 
 print(f"Factura 1: {valorFactura1}")
 print(f"Factura 2: {valorFactura2}")
 print(f"Factura 3: {valorFactura3}")
-print(f"Dia: {valorDelDia}")
+print(f"Dia: {subtotal}")
 print(f"Descuento: {descuento}")
 print(f"Neto: {neto}")
