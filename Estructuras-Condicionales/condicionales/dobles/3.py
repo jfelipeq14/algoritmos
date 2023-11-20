@@ -7,11 +7,9 @@
 # Salida
 # Mostrar mensaje de aproboado o reprobado
 
-notaUsuario = int(input("Favor, ingresar nota: "))
+notaUsuario = int(input("Favor, Digitar nota"))
 
-if notaUsuario == 7:
-    print(f'A medias, pero goleador! con {notaUsuario}')
 if notaUsuario >= 7:
-    print(f'Goleaaaaaaaaadoooooooor con {notaUsuario}')
+    print(f"Goleador a medias. pero goleador {notaUsuario}")
 else:
-    print(f'Comite! con {notaUsuario}')
+    print(f"Comite o a mamar {notaUsuario}")
