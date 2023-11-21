@@ -1,18 +1,18 @@
 # algoritmo que cuente el numero de casados, de separados, de viudos, solteros, union libre. sabiendo que en Medellin hay 20 personas, en Bello hay 15 personas y en Itagui 12 personas. Adicionalmente por cada municipio se quiere saber esta misma informacion.
 
-#Contadores
-solteros = 0
-casados = 0
-viudos = 0
-unionLibre = 0
-separados = 0
-
 #Acumuladores
 totalSolteros = 0
 totalCasados = 0
 totalViudos = 0
 totalUnionLibre = 0
 totalSeparados = 0
+
+#Contadores
+solteros = 0
+casados = 0
+viudos = 0
+unionLibre = 0
+separados = 0
 
 for medellin in range(20):
     estadoCivil = input(f"Digite el estado civil del empleado {medellin+1}: ")

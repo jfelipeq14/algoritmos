@@ -16,6 +16,7 @@ for i in range(3):
         productos = 3
 
     for i in range(productos):
+        print(f"\n")
         print(f"Producto {i+1} de la factura {factura}")
         nombre = input(f"Digite el nombre del producto {i+1}: ")
         cantidad = int(input(f"Digite la cantidad de {nombre}: "))
@@ -24,7 +25,7 @@ for i in range(3):
         totalProducto = cantidad * precio
 
         if factura == 1:
-            valorFactura1 += totalProducto
+            valorFactura1 = valorFactura1 + totalProducto
         elif factura == 2:
             valorFactura2 += totalProducto
         elif factura == 3:
