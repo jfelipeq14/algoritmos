@@ -24,12 +24,12 @@ for factura in range(1,4):
         cantidadArticulo=int(input(f"Digite la cantidad de {nombreArticulo}: "))
         totalArticulo = precioArticulo*cantidadArticulo
 
-    if factura == 1:
-        valorFactura1+=totalArticulo
-    elif factura == 2:
-        valorFactura2 += totalArticulo
-    elif factura == 3:
-        valorFactura3 += totalArticulo
+        if factura == 1:
+            valorFactura1+=totalArticulo
+        elif factura == 2:
+            valorFactura2 += totalArticulo
+        elif factura == 3:
+            valorFactura3 += totalArticulo
     
 descuentoFactura1 = valorFactura1*porcentajeDescuento
 netoFactura1 = valorFactura1-descuentoFactura1
