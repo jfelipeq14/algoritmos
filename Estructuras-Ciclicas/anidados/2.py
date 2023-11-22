@@ -28,12 +28,15 @@ for mes in range(1, 13):
             cantidadArticulo = int(input(f"Digite la cantidad de {nombreArticulo}: "))
             totalArticulo = precioArticulo*cantidadArticulo
             totalFactura += totalArticulo
+
         totalVentasMes += totalFactura
         totalVentasSemestre += totalFactura
         totalVentasAnual += totalFactura
+
     totalVentasMensuales += totalVentasMes
     totalVentasSemestrales += totalVentasSemestre
     totalVentasAnuales += totalVentasAnual
+
     print(f"Total de ventas del mes {mes}: {totalVentasMes}")
     print(f"Total de ventas del semestre {mes}: {totalVentasSemestre}")
     print(f"Total de ventas del año {mes}: {totalVentasAnual}")
