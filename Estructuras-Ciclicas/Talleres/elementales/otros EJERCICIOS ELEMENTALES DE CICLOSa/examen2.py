@@ -14,8 +14,10 @@
 for i in range(5):
     print("\n")
     nombre = input(f"Digite el nombre del trabajador {i+1}: ")
-    tiempoEnLaEmpresa = int(input(f"Cuanto tiempo lleva en la empresa señore {nombre}: "))
-    numeroHorasTrabajadas = int(input(f"¿Cuantas horas trabajo {nombre} en este mes? R// "))
+    tiempoEnLaEmpresa = int(
+        input(f"Cuanto tiempo lleva en la empresa señore {nombre}: "))
+    numeroHorasTrabajadas = int(
+        input(f"¿Cuantas horas trabajo {nombre} en este mes? R// "))
     valorHora = int(input("¿Cuanto vale la hora? R// "))
 
     salarioMensual = valorHora * numeroHorasTrabajadas

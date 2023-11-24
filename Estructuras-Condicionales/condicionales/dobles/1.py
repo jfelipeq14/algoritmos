@@ -13,6 +13,8 @@ nombreUsuario = input("Digite el carechimba nombre suyo: ")
 edadUsuario = float(input(f"Ingrese la edad del {nombreUsuario}: "))
 
 if edadUsuario >= 18:
-    print(f"El usuario {nombreUsuario} es mayor de edad y tiene {edadUsuario} anhos")
+    print(f"El usuario {nombreUsuario} es mayor de edad y tiene {
+          edadUsuario} anhos")
 else:
-    print(f"El usuario {nombreUsuario} es menor de edad y tiene {edadUsuario} anhos")
+    print(f"El usuario {nombreUsuario} es menor de edad y tiene {
+          edadUsuario} anhos")

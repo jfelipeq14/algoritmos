@@ -3,8 +3,8 @@
 valorCompra = int(input("Digite el valor de la compra: "))
 
 if valorCompra > 10000:
-    descuento=valorCompra*0.20
-    total=valorCompra-descuento
+    descuento = valorCompra*0.20
+    total = valorCompra-descuento
     print(total)
 else:
     print(valorCompra)

@@ -1,5 +1,5 @@
 # Elabore un algoritmo que muestre el promedio de edad de dos grupos, cada grupo tiene 3 aprendices.
-edades=0
+edades = 0
 sumaEdadesGrupos = 0
 for grupo in range(2):
     for aprendiz in range(3):

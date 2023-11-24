@@ -23,9 +23,12 @@ for mes in range(1, 13):
         # Ciclo para recorrer los articulos
         for articulo in range(1, 6):
             # Variables a usar
-            nombreArticulo = input(f"Digite el nombre del articulo {articulo}: ")
-            precioArticulo = int(input(f"Digite el precio de {nombreArticulo}: "))
-            cantidadArticulo = int(input(f"Digite la cantidad de {nombreArticulo}: "))
+            nombreArticulo = input(
+                f"Digite el nombre del articulo {articulo}: ")
+            precioArticulo = int(
+                input(f"Digite el precio de {nombreArticulo}: "))
+            cantidadArticulo = int(
+                input(f"Digite la cantidad de {nombreArticulo}: "))
             totalArticulo = precioArticulo*cantidadArticulo
             totalFactura += totalArticulo
 

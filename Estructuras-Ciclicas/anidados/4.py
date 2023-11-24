@@ -13,9 +13,11 @@ for vendedor in range(1, 7):
     # Ciclo para recorrer las facturas
     for factura in range(1, 4):
         # Variables a usar
-        valorFactura = float(input(f"Digite el valor de la factura {factura}: "))
+        valorFactura = float(
+            input(f"Digite el valor de la factura {factura}: "))
         comision = valorFactura*0.10
         totalComisionesVendedor += comision
         totalComisiones += comision
-    print(f"Total de comisiones del vendedor {vendedor}: {totalComisionesVendedor}")
+    print(f"Total de comisiones del vendedor {
+          vendedor}: {totalComisionesVendedor}")
 print(f"Total de comisiones: {totalComisiones}")

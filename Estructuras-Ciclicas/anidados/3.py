@@ -32,7 +32,8 @@ for regional in range(1, 33):
         # Ciclo para recorrer los empleados
         for empleado in range(1, 11):
             # Variables a usar
-            estadoCivil = input(f"Digite el estado civil del empleado {empleado}: ").lower()
+            estadoCivil = input(f"Digite el estado civil del empleado {
+                                empleado}: ").lower()
 
             if estadoCivil == "soltero":
                 totalSolteros += 1
@@ -54,9 +55,3 @@ for regional in range(1, 33):
                 totalUnionLibre += 1
                 totalUnionLibreRegional += 1
                 totalUnionLibreCentro += 1
-        print(f"Total de solteros del centro {centro}: {totalSolterosCentro}")
-        print(f"Total de casados del centro {centro}: {totalCasadosCentro}")
-        print(f"Total de separados del centro {centro}: {totalSeparadosCentro}")
-        print(f"Total de viudos del centro {centro}: {totalViudosCentro}")
-        print(f"Total de union libre del centro {centro}: {totalUnionLibreCentro}")
-    print(f"Total de solteros de la regional {regional}: {totalSolterosRegional}")
