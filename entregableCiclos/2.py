@@ -12,3 +12,4 @@ for mes in range(1, 13):
             cantidad = int(input(f"Digite la cantidad del producto {producto}: "))
             valorProducto = precio * cantidad
             subtotal += valorProducto
+            
