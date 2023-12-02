@@ -1,27 +1,38 @@
 # La Cía. Automovilística YOYO, S.A. Premia anualmente a sus mejores vendedores de acuerdo
 # a la siguiente tabla:
-# Si vendió Le corresponde de Comisión sobre ventas totales
+# Si vendió Le corresponde de Comisión sobre facturas totales
 # 10,000,000 < 3%
 # 10,000,000 y MENOR A 50,000,000 4%
 # 50,000,000 y MENOR A 70,000,000 5%
 # 70,000,000 o MAS 6%
+# Diseñar un algoritmo que lea las facturas de 100 vendedores y que escriba la comisión anual que le corresponda a cada vendedor. Suponga que vende 5 facturas por mes.
 
-ventas=0
+facturas=0
+comisionesAnual=0
+comisiones=0
 
-empleados = int(input("¿Cuantos empleados hay?: "))
-for empleado in range(empleados):
-    vendio = int(input(f"¿Cuantas ventas hizo el empleado {empleado+1}?: "))
-    for venta in range(vendio):
-        precioVenta=int(input(f"Cuanto vendio en la venta {venta+1}: "))
-        ventas += precioVenta
+for empleado in range(1, 3):
 
-    if ventas < 10000000:
-        comision = ventas * 0.03
-    elif ventas >= 10000000 and ventas < 50000000:
-        comision = ventas * 0.04
-    elif ventas >= 50000000 and ventas < 70000000:
-        comision = ventas * 0.05
-    elif ventas >= 70000000:
-        comision = ventas * 0.06
+    for mes in range(1, 3):
 
-    print(f"La comision del empleado {empleado+1}: {comision}")
+        for factura in range(1, 3):
+            preciofactura=int(input(f"Cuanto vendio en la factura {factura}: "))
+            facturas += preciofactura
+
+        if facturas < 10000000:
+            comision = facturas * 0.03
+        elif facturas >= 10000000 and facturas < 50000000:
+            comision = facturas * 0.04
+        elif facturas >= 50000000 and facturas < 70000000:
+            comision = facturas * 0.05
+        elif facturas >= 70000000:
+            comision = facturas * 0.06
+        comisiones += comision
+        comision=0
+        facturas=0
+        print("\n")
+        
+    comisionesAnual += comisiones
+    print(f"Comisiones anuales: {comisionesAnual}")
+    print("\n")
+    comisiones=0
