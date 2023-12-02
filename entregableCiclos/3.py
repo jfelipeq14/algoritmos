@@ -3,53 +3,87 @@
 # nivel nacional, por regional y por centro de formación, si conoce que son 32 regionales y 
 # cada regional tiene 8 centros de formación (cada centro tiene 10 empleados).
 
-totalSoltero =0
-totalCasados=0
-TotalSeparados=0
-totalViudos=0
-TotalUnionLibre=0
+sumasolteros=0
+sumacasados=0
+sumaseparado=0
+sumaviudo=0
+sumaunionl=0
 
-for regional in range (1,33):
-    totalSolterosregional=0
-    totalCasadosregional=0
-    totalSeparadosegional=0
-    totalViduosregional=0
-    totalUnionlibreregional=0
+sumasolterosre=0
+sumacasadosre=0
+sumaseparadore=0
+sumaviudore=0
+sumaunionlre=0
 
-    for centro in range (1,9):  
-        totalsolteroscentro =0
-        totalcasadoscentro =0
-        totalseparadoscentro =0
-        totalviudoscentro =0
-        totalunionlibrecentro =0
-
-        for empleados in range (1,11):
-            estadocivil =input(f"ingrese el estado civil del empleado {empleados}: ")
-            
-            if estadocivil == 'soltero':
-                totalSoltero +=1
-                totalSolterosregional +=1
-                totalsolteroscentro +=1
-            elif estadocivil == 'casados':
-                totalCasados +=1
-                totalCasadosregional+=1
-                totalcasadoscentro +=1
-            elif estadocivil == 'separados':
-                TotalSeparados +=1
-                totalSeparadosegional +=1
-                totalseparadoscentro +=1
-            elif estadocivil == 'viudo':
-                totalViudos +=1
-                totalViduosregional +=1
-                totalviudoscentro +=1
-            elif estadocivil == 'union libre':
-                TotalUnionLibre +=1
-                totalUnionlibreregional +=1
-                totalunionlibrecentro +=1
-               
-
-print(f"el numero de solteros regionales es {totalSolterosregional} y total del solteros en los centros  son{ totalsolteroscentro} y el total de los solteros son {totalSoltero}")
-print(f"el numero de casados regionales es {totalCasadosregional} y total del casados en los centros son{ totalcasadoscentro} y el total de los casados son {totalCasados}")
-print(f"el numero de separados regionales es {totalSeparadosegional} y total del separados en los centros son{ totalseparadoscentro} y el total de los separados son {TotalSeparados}")
-print(f"el numero de viudos regionales es {totalViduosregional} y total del viudos en los centros son { totalviudoscentro} y el total de los viudos son {totalViudos}")
-print(f"el numero de union libre regionales es {totalUnionlibreregional} y total del union libre en los centros son { totalunionlibrecentro} y el total de los union libre son {TotalUnionLibre}") 
+sumasolterosce=0
+sumacasadosce=0
+sumaseparadoce=0
+sumaviudoce=0
+sumaunionlce=0
+for regional in range(2):
+    print(f"------------------Regional {regional+1}---------------")
+    for centro in range(3):
+        solteros=0
+        casados=0
+        separados=0
+        viudos=0
+        unionL=0
+        print(f"--------------------Centro {centro+1}-----------------")
+        print("Digite estado civil (Soltero, Casado, Separado, Viudo, Union libre)")
+        for empleados in range(4):
+            estadoCivil=input("ingrese su estado civil: ")
+            if estadoCivil == "soltero":
+                solteros+=1
+            elif estadoCivil == "casado":
+                casados+=1
+            elif estadoCivil == "separado":
+                separados+=1
+            elif estadoCivil == "viudo":
+                viudos+=1
+            elif estadoCivil == "union libre":
+                unionL+=1
+        print("El numero de empleados solteros es: ",solteros)
+        print("El numero de empleados casados es: ",casados)
+        print("El numero de empleados separados es: ",separados)
+        print("El numero de empleados viudos es: ",viudos)
+        print("El numero de empleados union libre es: ",unionL)
+        print("\n")
+        sumasolterosce=sumasolterosce+solteros
+        sumacasadosce=sumacasadosce+casados
+        sumaseparadoce=sumaseparadoce+separados
+        sumaviudoce=sumaviudoce+viudos
+        sumaunionlce=sumaunionlce+unionL
+        solteros=0
+        casados=0
+        separados=0
+        viudos=0
+        unionL=0
+        
+    
+    print("El numero de empleados solteros en el centro es: ",sumasolterosce)
+    print("El numero de empleados casados en el centro es: ",sumacasadosce)
+    print("El numero de empleados separados en el centro es: ",sumaseparadoce)
+    print("El numero de empleados viudos en el centro es: ",sumaviudoce)
+    print("El numero de empleados union libre en el centro es: ",sumaunionlce)
+    print("\n") 
+    sumasolterosre=sumasolterosre+sumasolterosce
+    sumacasadosre=sumacasadosre+sumacasadosce
+    sumaseparadore=sumaseparadore+sumaseparadoce
+    sumaviudore=sumaviudore+sumaviudoce
+    sumaunionlre=sumaunionlre+sumaunionlce    
+    sumasolterosce=0
+    sumacasadosce=0
+    sumaseparadoce=0
+    sumaviudoce=0
+    sumaunionlce=0
+    
+print("El numero de empleados solteros en la regional es: ",sumasolterosre)
+print("El numero de empleados casados en la regional es: ",sumacasadosre)
+print("El numero de empleados separados en la regional es: ",sumaseparadore)
+print("El numero de empleados viudos en la regional  es: ",sumaviudore)
+print("El numero de empleados union libre en la regional es: ",sumaunionlre)
+sumasolterosre=0
+sumacasadosre=0
+sumaseparadore=0
+sumaviudore=0
+sumaunionlre=0 
