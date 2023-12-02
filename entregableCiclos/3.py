@@ -21,15 +21,13 @@ sumaseparadoce=0
 sumaviudoce=0
 sumaunionlce=0
 for regional in range(2):
-    print(f"------------------Regional {regional+1}---------------")
     for centro in range(3):
         solteros=0
         casados=0
         separados=0
         viudos=0
         unionL=0
-        print(f"--------------------Centro {centro+1}-----------------")
-        print("Digite estado civil (Soltero, Casado, Separado, Viudo, Union libre)")
+        print("Digite estado civil (Soltero, Casado, Separado, Viudo, Union libre): ")
         for empleados in range(4):
             estadoCivil=input("ingrese su estado civil: ")
             if estadoCivil == "soltero":

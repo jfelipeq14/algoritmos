@@ -11,11 +11,11 @@ facturas=0
 comisionesAnual=0
 comisiones=0
 
-for empleado in range(1, 3):
+for empleado in range(1, 101):
 
-    for mes in range(1, 3):
+    for mes in range(1, 13):
 
-        for factura in range(1, 3):
+        for factura in range(1, 6):
             preciofactura=int(input(f"Cuanto vendio en la factura {factura}: "))
             facturas += preciofactura
 
