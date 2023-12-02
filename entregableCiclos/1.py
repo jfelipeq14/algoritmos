@@ -6,18 +6,22 @@
 
 dia = 0
 subtotal = 0
+
 for factura in range(1, 3):
+
     for producto in range(1, 3):
         precio = int(input(f"Digite el precio del producto {producto}: "))
         cantidad = int(input(f"Digite la cantidad del producto {producto}: "))
         valorProducto = precio*cantidad
         subtotal += valorProducto
+
     if subtotal <= 50000:
         descuento = subtotal * 0.03
     elif subtotal <= 100000:
         descuento = subtotal * 0.05
     elif subtotal > 100000:
         descuento = subtotal * 0.09
+        
     neto = subtotal - descuento
     dia += neto
     print()
