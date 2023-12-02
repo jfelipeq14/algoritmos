@@ -9,13 +9,16 @@ semestral=0
 anuales=0
 
 for semestre in range(0, 12, 6):
-    for mes in range(1, 3):
-        for factura in range(1, 3):
-            for producto in range(1, 3):
+
+    for mes in range(1, 13):
+
+        for factura in range(1, 6):
+
+            for producto in range(1, 6):
                 precio=int(input(f"Digite el precio del producto {producto}: "))
                 cantidad=int(input(f"Digite la cantidad del producto {producto}: "))
-                producto = cantidad * precio
-                subtotal += producto
+                valorProducto = cantidad * precio
+                subtotal += valorProducto
                 facturas += subtotal
                 print(f"producto {producto}")
                 print(f"subtotal {subtotal}")
