@@ -9,3 +9,5 @@ for sucursales in range(1, 4):
         sexo=input(f"Digite el sexo del empleado {empleados}: ")
         estadoCivil=input(f"Digite el estado civil del empleado {empleados}: ")
         cantidadHijos = int(input(f"Digite la cantidad de hijos del empleado {empleados}: "))
+
+        
