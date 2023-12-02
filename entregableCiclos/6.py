@@ -11,26 +11,28 @@
 notasAprendiz=0
 acumPromAprendices=0
 acumPromedios=0
+sumaDePromedios=0
 
 countMenosDe2=0
 countMasDe2MenosDe3=0
 countMasDe3MenosDe4=0
 countMasDe4=0
 
-for aprendiz in range(1, 3):
+for aprendiz in range(1, 36):
     print(f"Aprendiz {aprendiz}")
 
-    for competencia in range(1, 3):
+    for competencia in range(1, 6):
         print(f"Competencia {competencia}")
 
-        for examen in range(1, 3):
+        for examen in range(1, 4):
             nota = float(input(f"Digite la nota del examen {examen}: "))
             notasAprendiz += nota
 
-        promedioCompetencia=notasAprendiz/2
-        acumPromAprendices += promedioCompetencia
-        print(f"Promedio {promedioCompetencia}")
+        promedioAprendiz=notasAprendiz/3
+        acumPromAprendices += promedioAprendiz
+        print(f"Promedio {promedioAprendiz}")
         print(f"Acum {acumPromAprendices}")
+        print()
         notasAprendiz = 0
 
     if acumPromAprendices < 2.0:
@@ -46,9 +48,16 @@ for aprendiz in range(1, 3):
         countMasDe4 += 1
     
     acumPromedios += acumPromAprendices
-    promedioTotal = acumPromedios / 2
+    promedioTotal = acumPromedios / 5
+    sumaDePromedios += promedioTotal
+    acumPromAprendices = 0
+    acumPromedios = 0
+
+total = sumaDePromedios / 35
+
 print(f"obtuvieron una calificación menor a 2: {countMenosDe2}")
 print(f"obtuvieron una calificación de 2 y menos que 3: {countMasDe2MenosDe3}")
 print(f"obtuvieron una calificación de 3 y menos de 4: {countMasDe3MenosDe4}")
 print(f"obtuvieron una calificación de 4 o más: {countMasDe4}")
-print(f"Promedio total: {promedioTotal}")
+
+print(f"Promedios: {total}")
