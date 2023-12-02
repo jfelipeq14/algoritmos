@@ -39,12 +39,15 @@ for sucursales in range(1, 4):
             hombresViudosConMasDeDosHijos+=1
 
         elif sexo == "mujer" and estadoCivil == "soltera" and cantidadHijos == 2:
+            mujeres+=1
             mujeresSolterasConDosHijos+=1
 
         elif sexo == "mujer" and estadoCivil == "viuda" and cantidadHijos == 0:
+            mujeres+=1
             mujeresViudasSinHijos+=1
 
         elif sexo == "mujer" and estadoCivil == "divorciada" and cantidadHijos == 0:
+            mujeres+=1
             mujeresDivorciadasSinHijos+=1
 
 print(f"cantidad de mujeres: {mujeres}")
