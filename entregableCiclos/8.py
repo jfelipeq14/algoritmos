@@ -1,8 +1,8 @@
 # Calcular el promedio de las notas (3 notas) de ALGORITMOS de los 17 alumnos y mostrar
 # un mensaje por cada alumno si aprobó o reprobó la clase (se gana con 3,5 o mas).
-calificaciones=0
 for alumno in range(1, 18):
     print(f"Alumno {alumno}")
+    calificaciones = 0
     for notas in range(1, 4):
         nota=float(input(f"Digite la nota {notas}: "))
         calificaciones += nota
@@ -14,4 +14,3 @@ for alumno in range(1, 18):
     else:
         print(f"Excelente. Goleador!")
         print("\n")
-    calificaciones = 0

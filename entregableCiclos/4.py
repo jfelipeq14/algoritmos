@@ -5,10 +5,10 @@
 porcentajeComision = float(input("Ingrese el porcentaje de la comision : "))
 totalComision=0
 
-for vendedor in range (6) :
+for vendedor in range (1, 7) :
     totalFactVendedor=0
 
-    for factura in range (5) :
+    for factura in range (1, 6) :
         valorFactura= int(input("Ingrese el valor de la factura: "))
         totalFactVendedor+=valorFactura
 

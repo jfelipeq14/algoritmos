@@ -7,14 +7,13 @@
 # 70,000,000 o MAS 6%
 # Diseñar un algoritmo que lea las facturas de 100 vendedores y que escriba la comisión anual que le corresponda a cada vendedor. Suponga que vende 5 facturas por mes.
 
-facturas=0
 comisionesAnual=0
-comisiones=0
 
 for empleado in range(1, 101):
-
+    comisiones=0
     for mes in range(1, 13):
-
+        comision=0
+        facturas=0
         for factura in range(1, 6):
             preciofactura=int(input(f"Cuanto vendio en la factura {factura}: "))
             facturas += preciofactura
@@ -28,11 +27,8 @@ for empleado in range(1, 101):
         elif facturas >= 70000000:
             comision = facturas * 0.06
         comisiones += comision
-        comision=0
-        facturas=0
         print("\n")
         
     comisionesAnual += comisiones
     print(f"Comisiones anuales: {comisionesAnual}")
     print("\n")
-    comisiones=0
