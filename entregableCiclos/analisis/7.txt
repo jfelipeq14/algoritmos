@@ -1,0 +1,8 @@
+# La Cía. Automovilística YOYO, S.A. Premia anualmente a sus mejores vendedores de acuerdo
+# a la siguiente tabla:
+# Si vendió Le corresponde de Comisión sobre facturas totales
+# 10,000,000 < 3%
+# 10,000,000 y MENOR A 50,000,000 4%
+# 50,000,000 y MENOR A 70,000,000 5%
+# 70,000,000 o MAS 6%
+# Diseñar un algoritmo que lea las facturas de 100 vendedores y que escriba la comisión anual que le corresponda a cada vendedor. Suponga que vende 5 facturas por mes.

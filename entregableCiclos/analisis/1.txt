@@ -1,0 +1,6 @@
+La empresa “salome style” lo contrata para que muestre la facturación de un día sabiendo que en
+el día hay 2 facturas y cada factura tiene 2 productos (cantidad y valor). Cada factura tiene un
+descuento dependiendo del valor de dicha factura. Si la factura es menor o igual a 50.000 tiene un
+descuento del 3%, si la factura es menor o igual a 100.000 tiene un descuento del 5% y si es mayor
+el descuento es del 9%.
+
