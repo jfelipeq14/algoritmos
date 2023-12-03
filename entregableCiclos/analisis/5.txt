@@ -1,3 +1,26 @@
 # En su empresa le solicitan que desarrolle un algoritmo que calcule el iva que pagaron
 # durante el año sabiendo que se paga cada dos meses. (iva =valorfactura * 19%.). Cada
 # factura tiene 4 productos.
+
+
+Estructuras:
+Secuenciales - Ciclicas - Ciclicas anidadas
+
+DE:
+cantidadFacturas, precio, cantidad
+
+P:
+// Calcular el valor del producto
+valorProducto = precio * cantidad
+
+//acumular los productos en la factura
+valorFactura += valorProducto
+
+//Obtener el valor del iva
+iva = valorFactura * 0.19
+
+//Acumular el valor del iva
+totalIva += iva
+
+DS:
+totalIva
