@@ -4,3 +4,26 @@ descuento dependiendo del valor de dicha factura. Si la factura es menor o igual
 descuento del 3%, si la factura es menor o igual a 100.000 tiene un descuento del 5% y si es mayor
 el descuento es del 9%.
 
+DatosEntrada:
+cantidad, valor
+
+Operaciones:
+// Hallar el valor del producto
+valorProducto (4000) = cantidad (2) * valor (2000)
+
+// Acumular los productos
+valorFactura += valorProducto (agrega lo que obtenga de valorProducto)
+
+//Validar el precio para el descuento
+si valorFactura <= 50000 : descuento = valorFactura * 0.03
+sino si valorFactura <= 100000 : descuento = valorFactura * 0.05
+sino si valorFactura > 100000 : descuento = valorFactura * 0.09
+
+// Obtiene el valor total
+valorTotalFactura = valorFactura - descuento
+
+// Acumular el valor de cada factura
+valorDia += valorTotalFactura
+
+DatosSalida:
+valorDia
