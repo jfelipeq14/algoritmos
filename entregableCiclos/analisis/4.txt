@@ -2,22 +2,23 @@
 # vendedores de la empresa y el total de comisiones. Se conoce que la empresa tiene 6
 # vendedores y cada vendedor trae las facturas(5) del mes que vendió.
 
+ANALISIS
 
+Estructuras:
+Secuenciales - Ciclicas - Ciclicas anidadas
 
-porcentajeComision = float(input("Ingrese el porcentaje de la comision : "))
-totalComision=0
+DE:
+porcentajeComision, valorFactura
 
-for vendedor in range (1, 7) :
-    totalFactVendedor=0
+P:
+//Acumular el valor de las facturas
+totalFactVendedor += valorFactura
 
-    for factura in range (1, 6) :
-        valorFactura= int(input("Ingrese el valor de la factura: "))
-        totalFactVendedor+=valorFactura
+// Obtenga la comision del vendedor
+comisionVendedor = (totalFactVendedor * porcentajeComision)/100
 
-    comisionVendedor=(totalFactVendedor*porcentajeComision)/100
+//Acumule las comisiones para su total
+totalComision += comisionVendedor
 
-    totalComision += comisionVendedor
-
-    print("Comision para vendedor No. ", vendedor+1, " es igual a ", comisionVendedor)
-
-print("Total comisiones : ",totalComision)
+DS:
+comisionVendedor, totalComision
