@@ -10,16 +10,12 @@ DE:
 cantidadFacturas, precio, cantidad
 
 P:
-// Calcular el valor del producto
 valorProducto = precio * cantidad
 
-//acumular los productos en la factura
 valorFactura += valorProducto
 
-//Obtener el valor del iva
 iva = valorFactura * 0.19
 
-//Acumular el valor del iva
 totalIva += iva
 
 DS:
