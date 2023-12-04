@@ -23,7 +23,7 @@ for aprendiz in range(1, 36):
 
     for competencia in range(1, 6):
         print(f"Competencia {competencia}")
-
+        notasAprendiz = 0
         for examen in range(1, 4):
             nota = float(input(f"Digite la nota del examen {examen}: "))
             notasAprendiz += nota
@@ -33,7 +33,6 @@ for aprendiz in range(1, 36):
         print(f"Promedio {promedioAprendiz}")
         print(f"Acum {acumPromAprendices}")
         print()
-        notasAprendiz = 0
 
     if acumPromAprendices < 2.0:
         countMenosDe2 += 1
