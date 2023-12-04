@@ -28,4 +28,3 @@ for factura in range(1, 3):
     print(f"Valor neto: {neto}")
     print(f"Valor dia: {dia}")
     print()
-#Completed

@@ -1,2 +1,17 @@
 # Calcular el promedio de las notas (3 notas) de ALGORITMOS de los 17 alumnos y mostrar
 # un mensaje por cada alumno si aprobó o reprobó la clase (se gana con 3,5 o mas).
+
+Estructuras:
+Ciclicas - Ciclicas anidadas - Secuenciales - Condicionales
+
+DE:
+nota
+
+P:
+calificaciones += nota
+totalCalificaciones = calificaciones / 3
+
+si totalCalificaciones < 3.5:
+    DS: "Uy no. Mejor cancele!"
+sino:
+    DS: "Excelente. Goleador!"

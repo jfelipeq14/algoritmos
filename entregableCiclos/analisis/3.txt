@@ -2,3 +2,53 @@
 # soltero(a)s, casado(a)s, separado(a)s, viudo(a)s y en unión libre que tiene sus empleados a 
 # nivel nacional, por regional y por centro de formación, si conoce que son 32 regionales y 
 # cada regional tiene 8 centros de formación (cada centro tiene 10 empleados).
+
+
+Estructuras:
+Ciclicas - Ciclicas anidadas - Secuenciales - Condicionales
+
+DE:
+estadoCivil
+
+P:
+si estadoCivil == "soltero":
+    solteros+=1
+sino si estadoCivil == "casado":
+    casados+=1
+sino si estadoCivil == "separado":
+    separados+=1
+sino si estadoCivil == "viudo":
+    viudos+=1
+sino si estadoCivil == "union libre":
+    unionL+=1
+
+sumasolterosce=sumasolterosce+solteros
+sumacasadosce=sumacasadosce+casados
+sumaseparadoce=sumaseparadoce+separados
+sumaviudoce=sumaviudoce+viudos
+sumaunionlce=sumaunionlce+unionL
+
+sumasolterosre=sumasolterosre+sumasolterosce
+sumacasadosre=sumacasadosre+sumacasadosce
+sumaseparadore=sumaseparadore+sumaseparadoce
+sumaviudore=sumaviudore+sumaviudoce
+sumaunionlre=sumaunionlre+sumaunionlce
+
+DS:
+sumasolteros,
+sumacasados,
+sumaseparado,
+sumaviudo,
+sumaunionl,
+
+sumasolterosre,
+sumacasadosre,
+sumaseparadore,
+sumaviudore,
+sumaunionlre,
+
+sumasolterosce,
+sumacasadosce,
+sumaseparadoce,
+sumaviudoce,
+sumaunionlce,

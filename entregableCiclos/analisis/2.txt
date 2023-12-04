@@ -2,26 +2,20 @@
 # que calcule las ventas anuales, ventas semestrales y mensuales de la empresa. Cada mes
 # se generan 5 facturas y cada factura (cantidad * precio unitario) tiene 5 artículos.
 
+Estructuras:
+Ciclicas -Ciclicas anidadas - Secuenciales
 
-Datos de entrada:
+DE:
 cantidad, precio
 
-COF:
+P:
 
-//Calcular el valor de cada producto
-valorproducto = cantidad * precio
+valorProducto = cantidad * precio
+subtotal += valorProducto
+facturas += subtotal
+mes += facturas
+semestre += mes
+anuales += semestre
 
-// la acumulacion de todos los productos
-subtotal += valorproducto
-
-// Acumulacion a nivel mensual
-mensual += subtotal
-
-// Acumulacion a nivel semestral (2)
-semestral += mensual
-
-// Acumulacion anual
-anual += semestral
-
-Datos de salida:
+DS:
 mensual, semestral, anual

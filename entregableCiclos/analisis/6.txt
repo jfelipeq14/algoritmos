@@ -7,3 +7,34 @@
 # C.- La cantidad de aprendices que obtuvieron una calificación de 3 y menos de 4
 # D. La cantidad de aprendices que obtuvieron una calificación de 4 o más.
 # H. Calcular el promedio de todos los aprendices.
+
+Estructuras:
+Ciclicas - Ciclicas anidadas - Secuenciales - Condicionales
+
+DE:
+nota
+
+P:
+promedioAprendiz=notasAprendiz/3
+acumPromAprendices += promedioAprendiz
+
+si acumPromAprendices < 2.0:
+    countMenosDe2 += 1
+
+sino si acumPromAprendices >= 2.0 and acumPromAprendices < 3.0:
+    countMasDe2MenosDe3 += 1
+
+sino si acumPromAprendices >= 3.0 and acumPromAprendices < 4.0:
+    countMasDe3MenosDe4 += 1
+
+sino si acumPromAprendices >= 4.0:
+    countMasDe4 += 1
+
+acumPromedios += acumPromAprendices
+promedioTotal = acumPromedios / 5
+sumaDePromedios += promedioTotal
+
+total = sumaDePromedios / 35
+
+DS:
+countMenosDe2, countMasDe2MenosDe3, countMasDe3MenosDe4, countMasDe4, total

@@ -6,3 +6,28 @@
 # 50,000,000 y MENOR A 70,000,000 5%
 # 70,000,000 o MAS 6%
 # Diseñar un algoritmo que lea las facturas de 100 vendedores y que escriba la comisión anual que le corresponda a cada vendedor. Suponga que vende 5 facturas por mes.
+
+Esctructuras:
+Ciclicas - Ciclicas anidadas - Secuenciales - Condicionales
+
+DE:
+preciofactura
+
+P:
+facturas += preciofactura
+
+si facturas < 10000000:
+    comision = facturas * 0.03
+sino si facturas >= 10000000 and facturas < 50000000:
+    comision = facturas * 0.04
+sino si facturas >= 50000000 and facturas < 70000000:
+    comision = facturas * 0.05
+sino si facturas >= 70000000:
+    comision = facturas * 0.06
+
+comisiones += comision
+
+comisionesAnual += comisiones
+
+DS:
+comisionesAnual
