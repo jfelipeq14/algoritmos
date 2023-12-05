@@ -1,0 +1,14 @@
+# Calcular el promedio de un alumno que tiene 7 calificaciones en la materia de Algoritmos
+
+Estructuras:
+Ciclicas - Secuenciales
+
+DE:
+nota
+
+P:
+notas = notas + nota
+promedio = notas / 7
+
+DS:
+promedio

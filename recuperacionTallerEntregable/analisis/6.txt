@@ -1,0 +1,13 @@
+# Elabore un algoritmo que lea 50 números y encuentre el menor de esos números
+
+Estructuras:
+ciclicas - secuenciales - condicionales
+
+DE:
+numero
+
+P:
+si (numero < menor): menor = numero
+
+DS:
+menor

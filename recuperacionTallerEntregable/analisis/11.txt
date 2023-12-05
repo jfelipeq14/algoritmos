@@ -1,0 +1,21 @@
+# Una empresa dedica gran parte de su tiempo a saber cuantos: Solteros hay, cuantos casados, cuantos viudos, cuantos unión libre y cuantos separados sabiendo que son 100 empleados.
+
+Estructuras:
+ciclicas - secuenciales - condicionales
+
+DE:
+estadoCivil
+
+P:
+si (estadoCivil == "soltero"):
+    solteros+=1
+sino si (estadoCivil == "casado"):
+    casados+=1
+sino si (estadoCivil == "viudo"):
+    viudos+=1
+sino si (estadoCivil == "union libre"):
+    unionLibre+=1
+sino si (estadoCivil == "separado"):
+    separados+=1
+
+DS: solteros, casados, viudos, unionLibre, separados

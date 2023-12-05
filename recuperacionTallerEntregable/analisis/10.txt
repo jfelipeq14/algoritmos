@@ -1,0 +1,16 @@
+# Leer 20 números e imprimir cuantos son positivos, cuantos negativos y cuantos neutros.
+
+Estructuras:
+ciclicas - secuenciales - condicionales
+
+DE:
+numero
+
+P:
+si (numero * 1 == numero):neutros+=1
+
+si (numero > 0): positivos+=1
+sino si (numero < 0): negativos+=1
+
+DS:
+positivos, negativos, neutros

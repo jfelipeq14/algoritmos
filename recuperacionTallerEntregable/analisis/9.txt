@@ -1,0 +1,10 @@
+# Leer 10 números e imprimir solamente los números positivos
+
+Estructuras:
+ciclicas - secuenciales - condicionales
+
+DE:
+numero
+
+P:
+si (numero >= 0): escribir: numero

@@ -1,0 +1,15 @@
+# Elabore un algoritmo que lea 10 números y muestre su suma y su promedio
+
+Estructuras:
+Ciclicas - secuenciales
+
+DE: 
+numero
+
+P:
+suma = suma + numero
+promedio = suma / 10
+
+DS:
+suma
+promedio

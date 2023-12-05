@@ -1,0 +1,14 @@
+# Leer 10 números y obtener su cubo y su cuarta.
+
+Estructuras:
+ciclicas - secuenciales
+
+DE:
+numero
+
+P:
+cubo = numero**3
+cuarta = numero / 4
+
+DS:
+cubo, cuarta

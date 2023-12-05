@@ -1,0 +1,43 @@
+# Una empresa dedica gran parte de su tiempo a saber cuantos:
+# mujeres hay, hombres solteros con un hijo, hombres solteros con más de un hijo,
+# hombres casados sin hijos, hombres casados con más de 2 hijos, hombres viudos con
+# más de 2 hijos, mujeres solteras con dos hijos, mujeres viudas sin hijos, mujeres
+# divorciadas sin hijos. Sabemos que en la empresa hay 99 empleados.
+
+Estructuras:
+ciclicas - secuenciales - condicionales
+
+DE:
+sexo, estadoCivil, cantidadHijos
+    
+si sexo == "mujer":
+    mujeres+=1
+
+sino si sexo == "hombre" and estadoCivil == "soltero" and cantidadHijos == 1:
+    hombresSolterosConUnHijo+=1
+
+sino si sexo == "hombre" and estadoCivil == "soltero" and cantidadHijos > 1:
+    hombresSolterosConMasDeUnHijo+=1
+
+sino si sexo == "hombre" and estadoCivil == "casado" and cantidadHijos == 0:
+    hombreCasadosSinHijos+=1
+
+sino si sexo == "hombre" and estadoCivil == "casado" and cantidadHijos > 2:
+    hombresCasadosConMasDeDosHijos+=1
+
+sino si sexo == "hombre" and estadoCivil == "viudo" and cantidadHijos > 2:
+    hombresViudosConMasDeDosHijos+=1
+
+sino si sexo == "mujer" and estadoCivil == "soltera" and cantidadHijos == 2:
+    mujeres+=1
+    mujeresSolterasConDosHijos+=1
+
+sino si sexo == "mujer" and estadoCivil == "viuda" and cantidadHijos == 0:
+    mujeres+=1
+    mujeresViudasSinHijos+=1
+
+sino si sexo == "mujer" and estadoCivil == "divorciada" and cantidadHijos == 0:
+    mujeres+=1
+    mujeresDivorciadasSinHijos+=1
+
+DS: mujeres, hombresSolterosConUnHijo, hombresSolterosConMasDeUnHijo, hombreCasadosSinHijos, hombresCasadosConMasDeDosHijos, hombresViudosConMasDeDosHijos, mujeresSolterasConDosHijos, mujeresViudasSinHijos, mujeresDivorciadasSinHijos,

@@ -1,0 +1,18 @@
+# 13. La empresa Coca-Cola lo contrata para que elabore un algoritmo que muestre las
+# ventas mensuales de cada una de las 5 sucursales que tiene en la ciudad de medellin.
+# Se sabe que cada sucursal tiene 6 secciones y cada sección tiene 12 vendedores y que
+# cada vendedor entrega 12 facturas y cada factura tiene 4 productos. (cantidad * valor)
+
+Estructuras:
+ciclicas - Secuenciales
+
+DE:
+precio, cantidad
+
+P:
+valorp=cantidad*precio
+valorf=valorf+valorp
+totalf=totalf+valorf
+
+DS:
+totalf
